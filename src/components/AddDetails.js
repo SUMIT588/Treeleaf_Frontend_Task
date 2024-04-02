@@ -13,7 +13,6 @@ function AddDetails() {
   const dispatch = useDispatch();
   const [isUpdate, setIsUpdate] = useState(false);
 
-  const userValue = useSelector((state) => state.userData);
   const [value, setValue] = useState({
     name: "",
     email: "",

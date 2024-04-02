@@ -8,7 +8,10 @@ function ViewDetails() {
 
   const allUserData = useSelector((state) => state.userData);
 
-  const userInfo = allUserData.filter((data) => data.userId == userId)[0];
+  const id = parseInt(userId)
+  
+
+  const userInfo = allUserData.filter((data) => data.userId === id)[0];
 
   return (
     <div className="bg-white shadow overflow-hidden sm:rounded-lg flex flex-col items-center justify-center h-full">
