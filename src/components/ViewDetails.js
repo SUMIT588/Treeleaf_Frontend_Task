@@ -21,7 +21,7 @@ function ViewDetails() {
         </h3>
         <img
           src={userInfo.profilePicture}
-          alt="Profile Picture"
+          alt="Profile"
           className="w-32 h-32 rounded-full mt-4"
         />
       </div>

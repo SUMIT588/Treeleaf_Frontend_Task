@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { submit, update } from "../store/postSlice";
-import { useDispatch, useSelector } from "react-redux";
 
 import Input from "./Input";
 import Table from "./Table";
 import error from "../error";
+import { useDispatch } from "react-redux";
 
 function AddDetails() {
   const [profilePicture, setProfilePicture] = useState();

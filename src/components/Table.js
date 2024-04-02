@@ -7,7 +7,7 @@ import { remove } from "../store/postSlice";
 
 // Importing icons
 
-function Table({ value, setValue, setIsUpdate }) {
+function Table({  setValue, setIsUpdate }) {
   const userData = useSelector((state) => state.userData);
   const heading = [
     "SN",
@@ -42,7 +42,7 @@ function Table({ value, setValue, setIsUpdate }) {
   };
 
   const handleEdit = (userId) => {
-    const editData = userData.filter((data) => userId == data.userId);
+    const editData = userData.filter((data) => userId === data.userId);
     const data = editData[0];
     setValue(data);
     setIsUpdate(true);
